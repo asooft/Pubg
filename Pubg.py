@@ -28,8 +28,10 @@ import base64
 # In[3]:
 
 
-first=pd.read_csv("data.csv")
-
+#first=pd.read_csv("data.csv")
+#first = first.sample(frac=0.15,random_state=42)
+#first.to_csv('smallData.csv')
+first = pd.read_csv("smallData.csv")
 
 # In[4]:
 
@@ -653,8 +655,10 @@ def fig4(gen_selection, radio_selection):
 
 # In[23]:
 
+if __name__ == 'main':
+    app.run_server(debug=True)
 
-app.run_server()
+#app.run_server()
 
 
 # In[ ]:
