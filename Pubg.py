@@ -9,18 +9,13 @@
 import pandas as pd
 import numpy as np
 
-from dash import Dash, html, dcc, no_update
-from dash.dependencies import Input, Output, State
-import plotly.graph_objects as go
+from dash import Dash, html, dcc
+from dash.dependencies import Input, Output
 import dash_bootstrap_components as dbc
 import plotly.graph_objs as go
 import plotly.graph_objects as go
 import plotly.express as px
-import plotly.figure_factory as ff
-import seaborn as sns 
-import matplotlib.pyplot as plt
 from sklearn.preprocessing import LabelEncoder
-import base64
 
 
 
