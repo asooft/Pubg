@@ -23,6 +23,10 @@ from sklearn.preprocessing import LabelEncoder
 import base64
 
 
+
+app = Dash(__name__)
+server = app.server
+
 # # Dataset
 
 # In[3]:
